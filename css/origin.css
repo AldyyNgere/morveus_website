@@ -24,6 +24,7 @@ body {
   font-family: "Work Sans", sans-serif;
   line-height: 1.5;
   transition: 0.2s;
+  padding-bottom: 5rem;
 }
 
 /* Useable class  */

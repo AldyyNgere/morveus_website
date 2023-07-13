@@ -5,6 +5,7 @@
   --second-color: #e09748;
   --grey-color: #aab9be;
   --white-color: #f8f9fa;
+  --white-dark-color: #c6c7c8;
 }
 
 /* ******* */
@@ -108,4 +109,86 @@
 #close-btn ion-icon:hover {
   background-color: var(--primary-dark-color);
   color: #fff;
+}
+
+/* ************** */
+/* HERO SECTION  */
+/* ************** */
+
+.hero-section {
+  padding-top: 12rem;
+}
+
+.hero-container {
+  max-width: 127rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 3%;
+  /* background-color: blue; */
+}
+
+.hero-text-box {
+  color: var(--black-color);
+}
+
+.heading {
+  font-size: 5.6rem;
+  line-height: 1;
+  letter-spacing: -0.1rem;
+  margin-bottom: 1rem;
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.hero-text-box p {
+  margin-bottom: 2.2rem;
+}
+
+.hero-img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 55%;
+  height: auto;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.hero-btns-box button {
+  display: inline-block;
+  margin-right: 0.6rem;
+  padding: 1.2rem 2.4rem;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 5rem;
+  transition: 0.2s;
+}
+
+.hero-btns-box button:first-child {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.hero-btns-box button:first-child:hover {
+  background-color: var(--primary-dark-color);
+  color: #fff;
+}
+
+.hero-btns-box button:last-child {
+  border: #dee2e6 solid 0.1rem;
+  background: none;
+  color: var(--black-color);
+}
+
+.hero-btns-box button:last-child:hover {
+  border: solid 1px var(--primary-color);
+  color: var(--primary-color);
 }

@@ -29,6 +29,9 @@ function darkmode() {
   const navbar_menu = document.querySelector(".navbar-menu");
   const navbar_menu_list = document.querySelectorAll(".navbar-menu a");
   const logo = document.querySelector(".logo");
+  const heading = document.querySelector(".heading");
+  const hero_btn = document.querySelector(".hero-btns-box button:last-child");
+  const hero_desc = document.querySelector(".hero-text-box p");
   const body = document.body;
 
   // when toggle click
@@ -39,6 +42,9 @@ function darkmode() {
     navbar_menu.classList.toggle("dark-mode");
     navbar.classList.toggle("dark-mode");
     logo.classList.toggle("dark-mode");
+    heading.classList.toggle("dark-mode");
+    hero_btn.classList.toggle("dark-mode");
+    hero_desc.classList.toggle("dark-mode");
     navbar_menu_list.forEach((list) => {
       list.classList.toggle("dark-mode");
     });

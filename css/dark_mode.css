@@ -5,6 +5,7 @@
 
 body.dark-mode {
   background: var(--black-color);
+  color: var(--white-color);
 }
 
 .navbar.dark-mode {
@@ -18,4 +19,20 @@ body.dark-mode {
 
 .navbar-menu a.dark-mode {
   color: var(--white-color);
+}
+
+.heading.dark-mode {
+  color: var(--white-color);
+}
+
+.hero-btns-box button:last-child.dark-mode {
+  color: var(--white-color);
+}
+
+.hero-btns-box button:last-child:hover.dark-mode {
+  color: var(--primary-color);
+}
+
+.hero-text-box p.dark-mode {
+  color: var(--white-dark-color);
 }
