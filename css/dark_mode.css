@@ -1,0 +1,21 @@
+/* DARK MODE  */
+.toggle.dark-mode {
+  left: 48%;
+}
+
+body.dark-mode {
+  background: var(--black-color);
+}
+
+.navbar.dark-mode {
+  background-color: var(--black-color);
+  box-shadow: none;
+}
+
+.logo.dark-mode {
+  color: var(--white-color);
+}
+
+.navbar-menu a.dark-mode {
+  color: var(--white-color);
+}

@@ -1,0 +1,32 @@
+:root {
+  --black-color: #101a1c;
+  --bg-color: #e8d5ce;
+  --primary-color: #c60e2b;
+  --primary-light-color: #cc2640;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
+  transition: 0.2s;
+}
+
+/* Useable class  */
+.primary-color {
+  color: var(--primary-light-color);
+}

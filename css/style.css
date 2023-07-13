@@ -1,0 +1,111 @@
+:root {
+  --black-color: #101a1c;
+  --primary-color: #c60e2b;
+  --primary-dark-color: #b20d27;
+  --second-color: #e09748;
+  --grey-color: #aab9be;
+  --white-color: #f8f9fa;
+}
+
+/* ******* */
+/* HEADER  */
+/* ******* */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 8rem;
+  padding: 1rem 4%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.brand .logo {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--black-color);
+  letter-spacing: 0.1rem;
+}
+
+.navbar-menu a {
+  display: inline-block;
+  margin-right: 3.2rem;
+  color: var(--black-color);
+  font-size: 1.6rem;
+  transition: ease-in 0.2s;
+  position: relative;
+}
+
+.navbar-menu a::after {
+  content: "";
+  background-color: var(--primary-color);
+  width: 0;
+  height: 10%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: ease-in 0.2s;
+  transform-origin: left;
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+}
+
+.navbar-btns-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.toggle-body {
+  padding: 1.6rem 3rem;
+  border-radius: 5rem;
+  background-color: var(--primary-color);
+  position: relative;
+  transition: 0.2s;
+}
+
+.toggle {
+  background-color: var(--white-color);
+  padding: 1.4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toggle:hover {
+  background-color: #fff;
+}
+
+#menu-btn,
+#close-btn {
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+  display: none;
+}
+
+#menu-btn ion-icon,
+#close-btn ion-icon {
+  background-color: var(--primary-color);
+  padding: 0.8rem;
+  border-radius: 50%;
+  color: var(--white-color);
+}
+
+#menu-btn ion-icon:hover,
+#close-btn ion-icon:hover {
+  background-color: var(--primary-dark-color);
+  color: #fff;
+}
